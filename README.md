@@ -1,71 +1,52 @@
-# leetcode README
+# LeetCode Extension
 
-This is the README for your extension "leetcode". After writing up a brief description, we recommend including the following sections.
+LeetCode  extension allows you to fetch test cases for LeetCode problems and execute your solutions in C++ or Python without leaving VS Code.
 
 ## Features
+- **Fetch Test Cases**: Get testcases by using the command "CPH: Fetch Test Cases"
+- **Run Solutions**: Run testcases using the command "CPH: Run Test Cases"
+- You will get result poped up in vs code.
+  
+## Installation
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/Aaryakotalwar/leetcode-Helper.git
+    ```
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+2. **Install Dependencies**:
+    Navigate to the extension's directory and install the required Node.js packages:
+    ```bash
+    cd leetcode
+    npm install
+    ```
 
-For example if there is an image subfolder under your extension project workspace:
+3. **Open in VS Code**:
+    Open the extension folder in Visual Studio Code:
+    ```bash
+    code .
+    ```
 
-\!\[feature X\]\(images/feature-x.png\)
+4. **Build the Extension**:
+    Compile the extension by running:
+    ```bash
+    npm run compile
+    ```
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+5. **Launch the Extension**:
+    Press `F5` to open a new VS Code window with the extension loaded.
 
-## Requirements
+## Usage
+1. **Activate the Command**:
+    Press `Ctrl+Shift+P` to open the command palette, type `CPH: Fetch Test Cases`, and press Enter.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2. **Enter the Title**:
+    Input the LeetCode problem's title when prompted.
 
-## Extension Settings
+3. **View Test Cases**:
+    The extension will fetch the test cases and display them in a pop-up message.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+4. **Open Solution Files**:
+    open the corresponding C++ (`1.cpp`) or Python (`solution.py`) solution files.
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+5. **Run Solutions**:
+    open the command palette, type `CPH: Run Test Cases`, and press Enter.
